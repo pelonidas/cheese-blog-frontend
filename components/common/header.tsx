@@ -1,16 +1,31 @@
 import Logo from "@/components/icons/logo";
 import Image from "next/image";
 import cheeseLogo from "/cheese.png";
+import Link from "next/link";
 export default function Header() {
   return (
-    <nav className={"h-[70px] bg-primary/30 flex items-center text-secondary"}>
-      <div className={"container flex items-center"}>
+    <nav className={"h-[80px] bg-primary/30 flex items-center text-secondary"}>
+      <div className={"container flex items-center justify-between"}>
         <ul className={"flex gap-10 font-medium"}>
-          <li>Home</li>
-          <li>About</li>
-          <li>Categories</li>
+          <Link
+            href={"/"}
+            className={"hover:text-black transition hover:underline"}
+          >
+            Home
+          </Link>
+          <Link
+            href={"/"}
+            className={"hover:text-black transition hover:underline"}
+          >
+            About
+          </Link>
+          <Link
+            href={"/"}
+            className={"hover:text-black transition hover:underline"}
+          >
+            Categories
+          </Link>
         </ul>
-
         <Logo />
       </div>
     </nav>
