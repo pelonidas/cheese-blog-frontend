@@ -44,13 +44,6 @@ export default function Hero() {
             author="Jenny kiaa"
             title="set video playback speed with javascript version"
           />
-          <div className={'mb-[80px]'}>
-          <Advertisement/>
-          </div>
-          <div className={'mb-[80px]'}>
-          <CategoriesStatistic/>
-          </div>
-          <SearchTags/>
         </div>
       </div>
     </section>
