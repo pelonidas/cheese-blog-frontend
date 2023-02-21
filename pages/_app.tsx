@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import Layout from "@/components/common/layout";
 import { Noto_Sans } from "@next/font/google";
 import type { AppProps } from "next/app";
 
@@ -10,7 +11,9 @@ const NotoSans = Noto_Sans({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className={NotoSans.className}>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </div>
   );
 }
