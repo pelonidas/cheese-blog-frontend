@@ -9,6 +9,15 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      screens: {
+        sm: "600px",
+        md: "728px",
+        lg: "984px",
+        xl: "1295px",
+      },
+    },
     extend: {
       colors: {
         primary: "#FFCC00",

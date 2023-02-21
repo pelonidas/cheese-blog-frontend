@@ -1,3 +1,5 @@
 export default function HomePage() {
-  return <div className={"bg-primary/40 text-[#444]"}>Hello World</div>;
+  return (
+    <div className={"bg-primary/40 text-[#444] container"}>Hello World</div>
+  );
 }
