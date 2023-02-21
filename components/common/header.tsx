@@ -1,6 +1,4 @@
 import Logo from "@/components/icons/logo";
-import Image from "next/image";
-import cheeseLogo from "/cheese.png";
 import Link from "next/link";
 export default function Header() {
   return (
