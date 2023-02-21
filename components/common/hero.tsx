@@ -1,6 +1,9 @@
 import ArticleCard from "@/components/blog/article-card";
 import PopularCard from "@/components/blog/popular-card";
 import Heading from "@/components/ui/heading";
+import Advertisement from "@/components/common/advertisement";
+import CategoriesStatistic from "@/components/common/categories-statistic";
+import SearchTags from "@/components/common/search-tags";
 
 export default function Hero() {
   return (
@@ -41,6 +44,13 @@ export default function Hero() {
             author="Jenny kiaa"
             title="set video playback speed with javascript version"
           />
+          <div className={'mb-[80px]'}>
+          <Advertisement/>
+          </div>
+          <div className={'mb-[80px]'}>
+          <CategoriesStatistic/>
+          </div>
+          <SearchTags/>
         </div>
       </div>
     </section>
