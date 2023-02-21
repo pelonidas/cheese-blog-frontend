@@ -11,7 +11,7 @@ export default function Footer() {
     <div className={"bg-primary/30"}>
       <div
         className={
-          "container flex justify-center gap-[110px] pt-[100px] pb-[80px]"
+          "container flex justify-between pt-[100px] pb-[80px]"
         }
       >
         <div className={"flex flex-col gap-[25px]"}>
