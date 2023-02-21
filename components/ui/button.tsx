@@ -3,7 +3,8 @@ import Link from 'next/link';
 export interface IButtonProps {
     variant:
         | 'unstyled'
-        | 'newsletter';
+        | 'filledGreen'
+    | 'filledWhite';
     className?: string;
     href?: string;
     children: React.ReactNode;
@@ -25,8 +26,10 @@ export default function Button({
         switch (variant) {
             case 'unstyled':
                 return '';
-            case 'newsletter':
+            case 'filledGreen':
                 return 'px-[40px] py-[15px] text-white bg-primary text-[15px] leading-[15px]';
+            case 'filledWhite':
+                return 'px-[25px] py-[15px] text-primary bg-white rounded-md text-[15px] leading-[15px]';
         }
     };
 
