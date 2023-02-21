@@ -1,5 +1,4 @@
 import { BiTimeFive } from "react-icons/bi";
-import { MdOutlineDateRange } from "react-icons/md";
 
 interface PopularCardProps {
   title: string;
@@ -21,7 +20,7 @@ export default function PopularCard(args: PopularCardProps) {
       </div>
       <h2 className={"font-semibold text-lg capitalize"}>{title}</h2>
       <div className={"flex items-center text-xs mt-4 text-[#777] gap-3"}>
-        <span>{author}</span>|
+        <span className={"capitalize"}>{author}</span>|
         <span className={"flex items-center gap-1"}>
           <BiTimeFive />
           {readingTime} Min. To Read
