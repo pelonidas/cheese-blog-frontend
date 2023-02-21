@@ -1,3 +1,3 @@
 export default function HomePage() {
-  return <div>Hello World</div>;
+  return <div className={"bg-[#FFCC00]"}>Hello World</div>;
 }
